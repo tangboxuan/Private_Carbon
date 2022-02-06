@@ -6,8 +6,9 @@ name = "pypi"
 [packages]
 tweepy = "*"
 python-decouple = "*"
-python-dateutil = "*"
 datetime = "*"
+pillow = "*"
+requests = "*"
 
 [dev-packages]
 

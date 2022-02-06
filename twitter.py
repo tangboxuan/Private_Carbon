@@ -24,13 +24,13 @@ def tweet(reply):
     emissions = co2.getco2(client)
     lower = emissions + " pounds of CO2 from private jets in 30 days"
     meme_link = meme.make_meme(f'"{latest_tweet}"', lower)
-    client.create_tweet(text="Hey @demo_jet_guy, your private jet contributed " 
+    client.create_tweet(text="Hey @demo_jet_owner, your private jet contributed " 
         + emissions + " pounds of CO2 in the last 30 days " 
         + meme_link + " You could plant " + str(int(emissions)//44) 
         + " trees or offset your carbon footprint here: https://bit.ly/35HEYSe",
         in_reply_to_tweet_id=reply)
 
-lookup = {"environment", "climate", "warming", "renewables", "recycle", "melting", "extinction"}
+lookup = {"environment", "climate", "warming", "renewables", "recycle", "melting", "extinction", "carbon", "footprint"}
 
 while True:
     time.sleep(2)

@@ -1,7 +1,7 @@
 ## PRIVATE CARBONS
 
-Reporting for duty Sir! I am here to report carbon dioxide emission by private jets.
+Reporting for duty, Sir! I am here to report carbon dioxide emission by celebrities' private jets.
 
-Inspirted by @ElonJet
+Inspired by @ElonJet
 
-Created as a joke side project for IC Hack 22
+Created as a side project (later turned into main project) for IC Hack 22

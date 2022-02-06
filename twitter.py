@@ -23,7 +23,7 @@ client = tweepy.Client(
 def tweet(reply):
     emissions = co2.getco2(client)
     lower = emissions + " pounds of CO2 from private jets in 30 days"
-    meme_link = meme.make_meme(str(latest_tweet), lower)
+    meme_link = meme.make_meme(f'"{latest_tweet}"', lower)
     client.create_tweet(text="Hey @demo_jet_guy, your private jet contributed " 
         + emissions + " pounds of CO2 in the last 30 days " 
         + meme_link + " You could plant " + str(int(emissions)//44) 
@@ -43,15 +43,13 @@ while True:
     if not int(last_tweet_id) == latest_tweet_id:
         toreply = False
         upper = []
-        for word in str(latest_tweet).lower().split():
-            if word in lookup:
-                toreply = True
+        toreply = bool([1 for l in lookup if l in str(latest_tweet).lower()])
         if toreply:
             try:
                 tweet(latest_tweet_id)
                 last_tweet_id_file.write_text(str(latest_tweet_id))
                 print("posted tweet")
             finally:
-                continue
+                pass
     else:
         print(str(latest_tweet_id) + " already replied")

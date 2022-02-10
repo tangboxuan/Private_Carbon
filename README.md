@@ -1,4 +1,4 @@
-## PRIVATE CARBONS
+## PRIVATE CARBON
 
 Reporting for duty, Sir! I am here to report carbon dioxide emission by celebrities' private jets.
 
